@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoViews2.TableViews">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                
+                    <TableSection Title="Datos Generales">
+                        <TextCell Text="Nombre" Detail="Solo Mayores de 18">
+                        </TextCell>
+                        <EntryCell Placeholder="Ingrese su Nombre">
+                        </EntryCell>
+                    </TableSection>
+                
+                <TableSection Title="Datos Particulares">
+
+                    <EntryCell Placeholder="(57)-777-11"
+                               Label="Telefono"
+                               Keyboard="Telephone">
+
+                    </EntryCell>
+                    <SwitchCell Text="Suscribirse"></SwitchCell>
+
+
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <BoxView Color="AliceBlue">
+                                </BoxView>
+                                <Label Text="NewsLetter">
+                                </Label>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Semanal">
+                                    </Label>
+                                    <Label Text="Mensual">
+                                    </Label>
+                                    <Label Text="Anual">
+                                    </Label>
+                              </StackLayout>
+                                <Label Text="Elegir Color">
+                                </Label>
+
+                                <StackLayout>
+                                    <BoxView Color="Lime">
+                                    </BoxView>
+                                    <BoxView Color="Red">
+                                    </BoxView>
+                                    <BoxView Color="DarkGreen">
+                                    </BoxView>
+                                    <BoxView Color="DodgerBlue">
+                                    </BoxView>
+
+                                </StackLayout>
+                                <BoxView Color="AliceBlue">
+                                </BoxView>
+                            </StackLayout>  
+                        </ViewCell.View>
+                        
+                    </ViewCell>
+                        
+                </TableSection>
+            </TableView>
+                
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
